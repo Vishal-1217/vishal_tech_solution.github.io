@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background: #325288;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: #FAEEE7;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+    margin: auto;
+    font-size: 1.5em;
+
+}
+
+
+.text li{
+    padding: 10px;
+}
+
+
+.brand li{
+    padding: 10px;
+       
+}
+
+#main-container{
+    display: flex;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.services{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+
+.services-box{
+    padding: 15px;
+    flex-basis: 23%;
+    border: 1px solid grey;
+}
+
+
+.services-box img{
+    width: 100%;
+   
+}
+
+.button{
+    align-self: flex-start;
+    margin-top: auto;
+    display: block;
+}
+
+.button a{
+    text-decoration: none;
+    background-color: #24A19C;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder; 
+    transition-property: background-color, color;
+    transition-duration: 1s 1s;
+    
+    
+
+}
+.button a:hover{
+    background-color: white;
+    color: #24A19C;
+}
+
+aside{
+    background-color: #24A19C;
+    flex:0 0 15vw;
+    padding: 10px;
+}
+
+aside img{
+    width: 100%;
+}
+
+.article ul{
+    padding: 0;
+}
+
+.article li{
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+aside a{
+    text-decoration: none;
+    color: #FAEEE7;
+}
+
+aside ul{
+    list-style-type: none;
+}
+
+aside ul a{
+    display: block;
+}
+
+footer{
+    text-align: center;
+    background-color: #325288;
+    color: #FAEEE7;
+    padding: 10px;
+}
+
+@media (max-width:800px){
+    aside{
+        flex:0 0 25vw;
+    }
+
+    .services-box{
+        flex-basis: 48%;
+        margin: 5px 0;
+        
+    } 
+
+}
+@media (max-width:540px){
+    header{
+        flex-direction: column;
+        
+    }
+
+    #logo{
+        order: -1;
+    }
+
+    .services-box{
+        flex-basis: 100%;
+        margin: 5px 0;
+        
+    } 
+
+    aside {
+        order: 2;
+    }
+
+    #main-container{
+        flex-direction: column;
+    }
+
+
+
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
